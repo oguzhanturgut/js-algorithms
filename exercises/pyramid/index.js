@@ -14,6 +14,16 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  const char = '#';
+  const space = ' ';
+  const makeRow = (x, y) =>
+    space.repeat((y - (2 * x - 1)) / 2) +
+    char.repeat(2 * x - 1) +
+    space.repeat((y - (2 * x - 1)) / 2);
+  for (let i = 1; i < n + 1; i++) {
+    console.log(makeRow(i, 2 * n - 1));
+  }
+}
 
 module.exports = pyramid;
