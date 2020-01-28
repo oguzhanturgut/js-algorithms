@@ -8,6 +8,9 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+  const normalize = str => [...str.replace(/[^\w]/g, '').toLowerCase()].sort().join('');
+  return normalize(stringA) === normalize(stringB);
+}
 
 module.exports = anagrams;
