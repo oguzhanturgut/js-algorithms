@@ -1,3 +1,3 @@
-# AlgoCasts
+# JS Algorithm and Data Structures exercises
 
-Companion repo to a course on Udemy.com
+
